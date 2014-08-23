@@ -21,13 +21,13 @@
 
 # Read the data files into data frames
 
-testData <- read("UCI HAR Dataset/test/X_test.txt")
-testSubject <- read("UCI HAR Dataset/test/subject_test.txt")
-testActivity <- read("UCI HAR Dataset/test/y_test.txt")
+testData <- read.table"UCI HAR Dataset/test/X_test.txt")
+testSubject <- read.table"UCI HAR Dataset/test/subject_test.txt")
+testActivity <- read.table"UCI HAR Dataset/test/y_test.txt")
 
-trainData <- read("UCI HAR Dataset/train/X_train.txt")
-trainSubject <- read("UCI HAR Dataset/train/subject_train.txt")
-trainActivity <- read("UCI HAR Dataset/train/y_train.txt")
+trainData <- read.table"UCI HAR Dataset/train/X_train.txt")
+trainSubject <- read.table"UCI HAR Dataset/train/subject_train.txt")
+trainActivity <- read.table"UCI HAR Dataset/train/y_train.txt")
 
 # Combine into one set of data, extracting only the columns needed
 

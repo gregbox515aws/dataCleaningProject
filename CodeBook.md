@@ -10,28 +10,28 @@ Finally a Fast Fourier Transform (FFT) was applied to some of these signals prod
 These signals were used to estimate variables of the feature vector for each pattern:  
 '-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
 
-tBodyAcc-XYZ
-tGravityAcc-XYZ
-tBodyAccJerk-XYZ
-tBodyGyro-XYZ
-tBodyGyroJerk-XYZ
-tBodyAccMag
-tGravityAccMag
-tBodyAccJerkMag
-tBodyGyroMag
-tBodyGyroJerkMag
-fBodyAcc-XYZ
-fBodyAccJerk-XYZ
-fBodyGyro-XYZ
-fBodyAccMag
-fBodyAccJerkMag
-fBodyGyroMag
-fBodyGyroJerkMag
+* tBodyAcc-XYZ
+* tGravityAcc-XYZ
+* tBodyAccJerk-XYZ
+* tBodyGyro-XYZ
+* tBodyGyroJerk-XYZ
+* tBodyAccMag
+* tGravityAccMag
+* tBodyAccJerkMag
+* tBodyGyroMag
+* tBodyGyroJerkMag
+* fBodyAcc-XYZ
+* fBodyAccJerk-XYZ
+* fBodyGyro-XYZ
+* fBodyAccMag
+* fBodyAccJerkMag
+* fBodyGyroMag
+* fBodyGyroJerkMag
 
 The set of variables that were estimated from these signals are: 
 
-mean(): Mean value | the mean of the values for this subject activity combination
-std(): Standard deviation
+* mean(): Mean value | the mean of the values for this subject activity combination
+* std(): Standard deviation
 
 
 The run_analysis.R script generates two files:
@@ -42,146 +42,142 @@ The run_analysis.R script generates two files:
 
 ### combined.txt
 
-column name | description
---------------------------
-subject | The number of the subject (1-30)
-activity | The activity on of the following values: Walking, Walking_Upstairs, Walking_Downstairs, Sitting, Standing, Laying
-tBodyAcc_mean_X | the mean of the values for this subject activity combination
-tBodyAcc_mean_Y | the mean of the values for this subject activity combination
-tBodyAcc_mean_Z | the mean of the values for this subject activity combination
-tBodyAcc_std_X | the standard deviation of the values for this subject activity combination
-tBodyAcc_std_Y | the standard deviation of the values for this subject activity combination
-tBodyAcc_std_Z | the standard deviation of the values for this subject activity combination
-tGravityAcc_mean_X | the mean of the values for this subject activity combination
-tGravityAcc_mean_Y | the mean of the values for this subject activity combination
-tGravityAcc_mean_Z | the mean of the values for this subject activity combination
-tGravityAcc_std_X | the standard deviation of the values for this subject activity combination
-tGravityAcc_std_Y | the standard deviation of the values for this subject activity combination
-tGravityAcc_std_Z | the standard deviation of the values for this subject activity combination
-tBodyAccJerk_mean_X | the mean of the values for this subject activity combination
-tBodyAccJerk_mean_Y | the mean of the values for this subject activity combination
-tBodyAccJerk_mean_Z | the mean of the values for this subject activity combination
-tBodyAccJerk_std_X | the standard deviation of the values for this subject activity combination
-tBodyAccJerk_std_Y | the standard deviation of the values for this subject activity combination
-tBodyAccJerk_std_Z | the standard deviation of the values for this subject activity combination
-tBodyGyro_mean_X | the mean of the values for this subject activity combination
-tBodyGyro_mean_Y | the mean of the values for this subject activity combination
-tBodyGyro_mean_Z | the mean of the values for this subject activity combination
-tBodyGyro_std_X | the standard deviation of the values for this subject activity combination
-tBodyGyro_std_Y | the standard deviation of the values for this subject activity combination
-tBodyGyro_std_Z | the standard deviation of the values for this subject activity combination
-tBodyGyroJerk_mean_X | the mean of the values for this subject activity combination
-tBodyGyroJerk_mean_Y | the mean of the values for this subject activity combination
-tBodyGyroJerk_mean_Z | the mean of the values for this subject activity combination
-tBodyGyroJerk_std_X | the standard deviation of the values for this subject activity combination
-tBodyGyroJerk_std_Y | the standard deviation of the values for this subject activity combination
-tBodyGyroJerk_std_Z | the standard deviation of the values for this subject activity combination
-tBodyAccMag_mean | the mean of the values for this subject activity combination
-tBodyAccMag_std | the standard deviation of the values for this subject activity combination
-tGravityAccMag_mean | the mean of the values for this subject activity combination
-tGravityAccMag_std | the standard deviation of the values for this subject activity combination
-tBodyAccJerkMag_mean | the mean of the values for this subject activity combination
-tBodyAccJerkMag_std | the standard deviation of the values for this subject activity combination
-tBodyGyroMag_mean | the mean of the values for this subject activity combination
-tBodyGyroMag_std | the standard deviation of the values for this subject activity combination
-tBodyGyroJerkMag_mean | the mean of the values for this subject activity combination
-tBodyGyroJerkMag_std | the standard deviation of the values for this subject activity combination
-fBodyAcc_mean_X | the mean of the values for this subject activity combination
-fBodyAcc_mean_Y | the mean of the values for this subject activity combination
-fBodyAcc_mean_Z | the mean of the values for this subject activity combination
-fBodyAcc_std_X | the standard deviation of the values for this subject activity combination
-fBodyAcc_std_Y | the standard deviation of the values for this subject activity combination
-fBodyAcc_std_Z | the standard deviation of the values for this subject activity combination
-fBodyAccJerk_mean_X | the mean of the values for this subject activity combination
-fBodyAccJerk_mean_Y | the mean of the values for this subject activity combination
-fBodyAccJerk_mean_Z | the mean of the values for this subject activity combination
-fBodyAccJerk_std_X | the standard deviation of the values for this subject activity combination
-fBodyAccJerk_std_Y | the standard deviation of the values for this subject activity combination
-fBodyAccJerk_std_Z | the standard deviation of the values for this subject activity combination
-fBodyGyro_mean_X | the mean of the values for this subject activity combination
-fBodyGyro_mean_Y | the mean of the values for this subject activity combination
-fBodyGyro_mean_Z | the mean of the values for this subject activity combination
-fBodyGyro_std_X | the standard deviation of the values for this subject activity combination
-fBodyGyro_std_Y | the standard deviation of the values for this subject activity combination
-fBodyGyro_std_Z | the standard deviation of the values for this subject activity combination
-fBodyAccMag_mean | the mean of the values for this subject activity combination
-fBodyAccMag_std | the standard deviation of the values for this subject activity combination
-fBodyBodyAccJerkMag_mean | the mean of the values for this subject activity combination
-fBodyBodyAccJerkMag_std | the standard deviation of the values for this subject activity combination
-fBodyBodyGyroMag_mean | the mean of the values for this subject activity combination
-fBodyBodyGyroMag_std | the standard deviation of the values for this subject activity combination
-fBodyBodyGyroJerkMag_mean | the mean of the values for this subject activity combination
-fBodyBodyGyroJerkMag_std | the standard deviation of the values for this subject activity combination
+-subject - The number of the subject (1-30)
+-activity - The activity on of the following values: Walking, Walking_Upstairs, Walking_Downstairs, Sitting, Standing, Laying
+- tBodyAcc_mean_X 
+- tBodyAcc_mean_Y 
+- tBodyAcc_mean_Z 
+- tBodyAcc_std_X 
+- tBodyAcc_std_Y 
+- tBodyAcc_std_Z 
+- tGravityAcc_mean_X 
+- tGravityAcc_mean_Y 
+- tGravityAcc_mean_Z 
+- tGravityAcc_std_X 
+- tGravityAcc_std_Y 
+- tGravityAcc_std_Z 
+- tBodyAccJerk_mean_X 
+- tBodyAccJerk_mean_Y 
+- tBodyAccJerk_mean_Z 
+- tBodyAccJerk_std_X 
+- tBodyAccJerk_std_Y 
+- tBodyAccJerk_std_Z 
+- tBodyGyro_mean_X 
+- tBodyGyro_mean_Y 
+- tBodyGyro_mean_Z 
+- tBodyGyro_std_X 
+- tBodyGyro_std_Y 
+- tBodyGyro_std_Z 
+- tBodyGyroJerk_mean_X 
+- tBodyGyroJerk_mean_Y 
+- tBodyGyroJerk_mean_Z 
+- tBodyGyroJerk_std_X 
+- tBodyGyroJerk_std_Y 
+- tBodyGyroJerk_std_Z 
+- tBodyAccMag_mean 
+- tBodyAccMag_std 
+- tGravityAccMag_mean 
+- tGravityAccMag_std 
+- tBodyAccJerkMag_mean 
+- tBodyAccJerkMag_std 
+- tBodyGyroMag_mean 
+- tBodyGyroMag_std 
+- tBodyGyroJerkMag_mean 
+- tBodyGyroJerkMag_std 
+- fBodyAcc_mean_X 
+- fBodyAcc_mean_Y 
+- fBodyAcc_mean_Z 
+- fBodyAcc_std_X 
+- fBodyAcc_std_Y 
+- fBodyAcc_std_Z 
+- fBodyAccJerk_mean_X 
+- fBodyAccJerk_mean_Y 
+- fBodyAccJerk_mean_Z 
+- fBodyAccJerk_std_X 
+- fBodyAccJerk_std_Y 
+- fBodyAccJerk_std_Z 
+- fBodyGyro_mean_X 
+- fBodyGyro_mean_Y 
+- fBodyGyro_mean_Z 
+- fBodyGyro_std_X 
+- fBodyGyro_std_Y 
+- fBodyGyro_std_Z 
+- fBodyAccMag_mean 
+- fBodyAccMag_std 
+- fBodyBodyAccJerkMag_mean 
+- fBodyBodyAccJerkMag_std 
+- fBodyBodyGyroMag_mean 
+- fBodyBodyGyroMag_std 
+- fBodyBodyGyroJerkMag_mean 
+- fBodyBodyGyroJerkMag_std 
 
 ### subjectActivity.txt
 
-column name | description
---------------------------
-subject | The number of the subject (1-30)
-activity | The activity on of the following values: Walking, Walking_Upstairs, Walking_Downstairs, Sitting, Standing, Laying
-tBodyAcc_mean_X | the mean of the values for this subject activity combination
-tBodyAcc_mean_Y | the mean of the values for this subject activity combination
-tBodyAcc_mean_Z | the mean of the values for this subject activity combination
-tBodyAcc_std_X | the standard deviation of the values for this subject activity combination
-tBodyAcc_std_Y | the standard deviation of the values for this subject activity combination
-tBodyAcc_std_Z | the standard deviation of the values for this subject activity combination
-tGravityAcc_mean_X | the mean of the values for this subject activity combination
-tGravityAcc_mean_Y | the mean of the values for this subject activity combination
-tGravityAcc_mean_Z | the mean of the values for this subject activity combination
-tGravityAcc_std_X | the standard deviation of the values for this subject activity combination
-tGravityAcc_std_Y | the standard deviation of the values for this subject activity combination
-tGravityAcc_std_Z | the standard deviation of the values for this subject activity combination
-tBodyAccJerk_mean_X | the mean of the values for this subject activity combination
-tBodyAccJerk_mean_Y | the mean of the values for this subject activity combination
-tBodyAccJerk_mean_Z | the mean of the values for this subject activity combination
-tBodyAccJerk_std_X | the standard deviation of the values for this subject activity combination
-tBodyAccJerk_std_Y | the standard deviation of the values for this subject activity combination
-tBodyAccJerk_std_Z | the standard deviation of the values for this subject activity combination
-tBodyGyro_mean_X | the mean of the values for this subject activity combination
-tBodyGyro_mean_Y | the mean of the values for this subject activity combination
-tBodyGyro_mean_Z | the mean of the values for this subject activity combination
-tBodyGyro_std_X | the standard deviation of the values for this subject activity combination
-tBodyGyro_std_Y | the standard deviation of the values for this subject activity combination
-tBodyGyro_std_Z | the standard deviation of the values for this subject activity combination
-tBodyGyroJerk_mean_X | the mean of the values for this subject activity combination
-tBodyGyroJerk_mean_Y | the mean of the values for this subject activity combination
-tBodyGyroJerk_mean_Z | the mean of the values for this subject activity combination
-tBodyGyroJerk_std_X | the standard deviation of the values for this subject activity combination
-tBodyGyroJerk_std_Y | the standard deviation of the values for this subject activity combination
-tBodyGyroJerk_std_Z | the standard deviation of the values for this subject activity combination
-tBodyAccMag_mean | the mean of the values for this subject activity combination
-tBodyAccMag_std | the standard deviation of the values for this subject activity combination
-tGravityAccMag_mean | the mean of the values for this subject activity combination
-tGravityAccMag_std | the standard deviation of the values for this subject activity combination
-tBodyAccJerkMag_mean | the mean of the values for this subject activity combination
-tBodyAccJerkMag_std | the standard deviation of the values for this subject activity combination
-tBodyGyroMag_mean | the mean of the values for this subject activity combination
-tBodyGyroMag_std | the standard deviation of the values for this subject activity combination
-tBodyGyroJerkMag_mean | the mean of the values for this subject activity combination
-tBodyGyroJerkMag_std | the standard deviation of the values for this subject activity combination
-fBodyAcc_mean_X | the mean of the values for this subject activity combination
-fBodyAcc_mean_Y | the mean of the values for this subject activity combination
-fBodyAcc_mean_Z | the mean of the values for this subject activity combination
-fBodyAcc_std_X | the standard deviation of the values for this subject activity combination
-fBodyAcc_std_Y | the standard deviation of the values for this subject activity combination
-fBodyAcc_std_Z | the standard deviation of the values for this subject activity combination
-fBodyAccJerk_mean_X | the mean of the values for this subject activity combination
-fBodyAccJerk_mean_Y | the mean of the values for this subject activity combination
-fBodyAccJerk_mean_Z | the mean of the values for this subject activity combination
-fBodyAccJerk_std_X | the standard deviation of the values for this subject activity combination
-fBodyAccJerk_std_Y | the standard deviation of the values for this subject activity combination
-fBodyAccJerk_std_Z | the standard deviation of the values for this subject activity combination
-fBodyGyro_mean_X | the mean of the values for this subject activity combination
-fBodyGyro_mean_Y | the mean of the values for this subject activity combination
-fBodyGyro_mean_Z | the mean of the values for this subject activity combination
-fBodyGyro_std_X | the standard deviation of the values for this subject activity combination
-fBodyGyro_std_Y | the standard deviation of the values for this subject activity combination
-fBodyGyro_std_Z | the standard deviation of the values for this subject activity combination
-fBodyAccMag_mean | the mean of the values for this subject activity combination
-fBodyAccMag_std | the standard deviation of the values for this subject activity combination
-fBodyBodyAccJerkMag_mean | the mean of the values for this subject activity combination
-fBodyBodyAccJerkMag_std | the standard deviation of the values for this subject activity combination
-fBodyBodyGyroMag_mean | the mean of the values for this subject activity combination
-fBodyBodyGyroMag_std | the standard deviation of the values for this subject activity combination
-fBodyBodyGyroJerkMag_mean | the mean of the values for this subject activity combination
-fBodyBodyGyroJerkMag_std | the standard deviation of the values for this subject activity combination
+subject - The number of the subject (1-30)
+activity - The activity on of the following values: Walking, Walking_Upstairs, Walking_Downstairs, Sitting, Standing, Laying
+- tBodyAcc_mean_X 
+- tBodyAcc_mean_Y 
+- tBodyAcc_mean_Z 
+- tBodyAcc_std_X 
+- tBodyAcc_std_Y 
+- tBodyAcc_std_Z 
+- tGravityAcc_mean_X 
+- tGravityAcc_mean_Y 
+- tGravityAcc_mean_Z 
+- tGravityAcc_std_X 
+- tGravityAcc_std_Y 
+- tGravityAcc_std_Z 
+- tBodyAccJerk_mean_X 
+- tBodyAccJerk_mean_Y 
+- tBodyAccJerk_mean_Z 
+- tBodyAccJerk_std_X 
+- tBodyAccJerk_std_Y 
+- tBodyAccJerk_std_Z 
+- tBodyGyro_mean_X 
+- tBodyGyro_mean_Y 
+- tBodyGyro_mean_Z 
+- tBodyGyro_std_X 
+- tBodyGyro_std_Y 
+- tBodyGyro_std_Z 
+- tBodyGyroJerk_mean_X 
+- tBodyGyroJerk_mean_Y 
+- tBodyGyroJerk_mean_Z 
+- tBodyGyroJerk_std_X 
+- tBodyGyroJerk_std_Y 
+- tBodyGyroJerk_std_Z 
+- tBodyAccMag_mean 
+- tBodyAccMag_std 
+- tGravityAccMag_mean 
+- tGravityAccMag_std 
+- tBodyAccJerkMag_mean 
+- tBodyAccJerkMag_std 
+- tBodyGyroMag_mean 
+- tBodyGyroMag_std 
+- tBodyGyroJerkMag_mean 
+- tBodyGyroJerkMag_std 
+- fBodyAcc_mean_X 
+- fBodyAcc_mean_Y 
+- fBodyAcc_mean_Z 
+- fBodyAcc_std_X 
+- fBodyAcc_std_Y 
+- fBodyAcc_std_Z 
+- fBodyAccJerk_mean_X 
+- fBodyAccJerk_mean_Y 
+- fBodyAccJerk_mean_Z 
+- fBodyAccJerk_std_X 
+- fBodyAccJerk_std_Y 
+- fBodyAccJerk_std_Z 
+- fBodyGyro_mean_X 
+- fBodyGyro_mean_Y 
+- fBodyGyro_mean_Z 
+- fBodyGyro_std_X 
+- fBodyGyro_std_Y 
+- fBodyGyro_std_Z 
+- fBodyAccMag_mean 
+- fBodyAccMag_std 
+- fBodyBodyAccJerkMag_mean 
+- fBodyBodyAccJerkMag_std 
+- fBodyBodyGyroMag_mean 
+- fBodyBodyGyroMag_std 
+- fBodyBodyGyroJerkMag_mean 
+- fBodyBodyGyroJerkMag_std 

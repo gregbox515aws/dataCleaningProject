@@ -202,7 +202,9 @@ print('Combining data')
 combined <- rbind(testDf, trainDf)
 
 print('Writing combined data file')
-write.table(combined, file='combined.txt', sep='\t')
+combinedOut <- combined
+combinedOut$activity <- as.character(combinedOut$activity)
+write.table(combinedOut, file='combined.txt', sep='\t')
 
 print('Melting combined data frame')
 combMelt <- melt(combined, id=c('subject', 'activity'), measure.vars=c(
@@ -279,4 +281,5 @@ print('Casting data frame')
 subjectActivityData = dcast(combMelt, subject + activity ~ variable, mean)
 
 print('Writing SubjectActivity data file')
+subjectActivityData$activity <- as.character(subjectActivityData$activity)
 write.table(subjectActivityData, file='subjectActivity.txt', sep='\t')

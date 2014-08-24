@@ -36,7 +36,16 @@ trainActivity <- read.table("UCI HAR Dataset/train/y_train.txt")
 print('Extracting and combining data')
 testDf <- data.frame(
 	"subject"=testSubject[,1],
-	"activity"=testActivity[,1],
+	"activity"=factor(testActivity[,1],
+		labels=c(
+			"Walking",
+			"Walking_Upstairs",
+			"Walking_Downstairs",
+			"Sitting",
+			"Standing",
+			"Laying"
+		)
+	),
 	"tBodyAcc_mean_X"=testData[,1],
 	"tBodyAcc_mean_Y"=testData[,2],
 	"tBodyAcc_mean_Z"=testData[,3],

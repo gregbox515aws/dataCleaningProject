@@ -29,9 +29,9 @@ testSubject <- read.table("UCI HAR Dataset/test/subject_test.txt")
 testActivity <- read.table("UCI HAR Dataset/test/y_test.txt")
 
 print('Loading train data')
-# trainData <- read.table("UCI HAR Dataset/train/X_train.txt")
-# trainSubject <- read.table("UCI HAR Dataset/train/subject_train.txt")
-# trainActivity <- read.table("UCI HAR Dataset/train/y_train.txt")
+trainData <- read.table("UCI HAR Dataset/train/X_train.txt")
+trainSubject <- read.table("UCI HAR Dataset/train/subject_train.txt")
+trainActivity <- read.table("UCI HAR Dataset/train/y_train.txt")
 
 # Combine into one set of data, extracting only the columns needed
 
@@ -201,6 +201,9 @@ trainDf <- data.frame(
 print('Combining data')
 combined <- rbind(testDf, trainDf)
 
+print('Writing combined data file')
+write.table(combined, file='combined.txt', sep='\t')
+
 print('Melting combined data frame')
 combMelt <- melt(combined, id=c('subject', 'activity'), measure.vars=c(
 			"tBodyAcc_mean_X",
@@ -275,4 +278,5 @@ combMelt <- melt(combined, id=c('subject', 'activity'), measure.vars=c(
 print('Casting data frame')
 subjectActivityData = dcast(combMelt, subject + activity ~ variable, mean)
 
-print(subjectActivityData)
+print('Writing SubjectActivity data file')
+write.table(subjectActivityData, file='subjectActivity.txt', sep='\t')

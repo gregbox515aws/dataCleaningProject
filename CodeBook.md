@@ -30,154 +30,154 @@ These signals were used to estimate variables of the feature vector for each pat
 
 The set of variables that were estimated from these signals are: 
 
-* mean(): Mean value | the mean of the values for this subject activity combination
-* std(): Standard deviation
+* mean(): Mean value
+* std(): Standard deviation of the values
 
 
 The run_analysis.R script generates two files:
-----------------------------------------------
+==============================================
 
 * combined.txt - a tab-delimited file with both the training and test datasets
-* subjectActivity.txt - a tab-delimited summary file based on the combined data with mean values for the features by subject by activity  | the mean of the values for this subject activity combination
+* subjectActivity.txt - a tab-delimited summary file based on the combined data with mean values for the features by subject by activity
 
-### combined.txt
+## combined.txt
+
+1. subject - The number of the subject (1-30)
+1. activity - The activity - one of the following values: Walking, Walking_Upstairs, Walking_Downstairs, Sitting, Standing, Laying
+1. tBodyAcc_mean_X - normalized ranging from -1 to 1
+1. tBodyAcc_mean_Y  - normalized ranging from -1 to 1
+1. tBodyAcc_mean_Z  - normalized ranging from -1 to 1
+1. tBodyAcc_std_X  - normalized ranging from -1 to 1
+1. tBodyAcc_std_Y  - normalized ranging from -1 to 1
+1. tBodyAcc_std_Z  - normalized ranging from -1 to 1
+1. tGravityAcc_mean_X  - normalized ranging from -1 to 1
+1. tGravityAcc_mean_Y  - normalized ranging from -1 to 1
+1. tGravityAcc_mean_Z  - normalized ranging from -1 to 1
+1. tGravityAcc_std_X  - normalized ranging from -1 to 1
+1. tGravityAcc_std_Y  - normalized ranging from -1 to 1
+1. tGravityAcc_std_Z  - normalized ranging from -1 to 1
+1. tBodyAccJerk_mean_X  - normalized ranging from -1 to 1
+1. tBodyAccJerk_mean_Y  - normalized ranging from -1 to 1
+1. tBodyAccJerk_mean_Z  - normalized ranging from -1 to 1
+1. tBodyAccJerk_std_X  - normalized ranging from -1 to 1
+1. tBodyAccJerk_std_Y  - normalized ranging from -1 to 1
+1. tBodyAccJerk_std_Z  - normalized ranging from -1 to 1
+1. tBodyGyro_mean_X  - normalized ranging from -1 to 1
+1. tBodyGyro_mean_Y  - normalized ranging from -1 to 1
+1. tBodyGyro_mean_Z  - normalized ranging from -1 to 1
+1. tBodyGyro_std_X  - normalized ranging from -1 to 1
+1. tBodyGyro_std_Y  - normalized ranging from -1 to 1
+1. tBodyGyro_std_Z  - normalized ranging from -1 to 1
+1. tBodyGyroJerk_mean_X  - normalized ranging from -1 to 1
+1. tBodyGyroJerk_mean_Y  - normalized ranging from -1 to 1
+1. tBodyGyroJerk_mean_Z  - normalized ranging from -1 to 1
+1. tBodyGyroJerk_std_X  - normalized ranging from -1 to 1
+1. tBodyGyroJerk_std_Y  - normalized ranging from -1 to 1
+1. tBodyGyroJerk_std_Z  - normalized ranging from -1 to 1
+1. tBodyAccMag_mean  - normalized ranging from -1 to 1
+1. tBodyAccMag_std  - normalized ranging from -1 to 1
+1. tGravityAccMag_mean  - normalized ranging from -1 to 1
+1. tGravityAccMag_std  - normalized ranging from -1 to 1
+1. tBodyAccJerkMag_mean  - normalized ranging from -1 to 1
+1. tBodyAccJerkMag_std  - normalized ranging from -1 to 1
+1. tBodyGyroMag_mean  - normalized ranging from -1 to 1
+1. tBodyGyroMag_std  - normalized ranging from -1 to 1
+1. tBodyGyroJerkMag_mean  - normalized ranging from -1 to 1
+1. tBodyGyroJerkMag_std  - normalized ranging from -1 to 1
+1. fBodyAcc_mean_X  - normalized ranging from -1 to 1
+1. fBodyAcc_mean_Y  - normalized ranging from -1 to 1
+1. fBodyAcc_mean_Z  - normalized ranging from -1 to 1
+1. fBodyAcc_std_X  - normalized ranging from -1 to 1
+1. fBodyAcc_std_Y  - normalized ranging from -1 to 1
+1. fBodyAcc_std_Z  - normalized ranging from -1 to 1
+1. fBodyAccJerk_mean_X  - normalized ranging from -1 to 1
+1. fBodyAccJerk_mean_Y  - normalized ranging from -1 to 1
+1. fBodyAccJerk_mean_Z  - normalized ranging from -1 to 1
+1. fBodyAccJerk_std_X  - normalized ranging from -1 to 1
+1. fBodyAccJerk_std_Y  - normalized ranging from -1 to 1
+1. fBodyAccJerk_std_Z  - normalized ranging from -1 to 1
+1. fBodyGyro_mean_X  - normalized ranging from -1 to 1
+1. fBodyGyro_mean_Y  - normalized ranging from -1 to 1
+1. fBodyGyro_mean_Z  - normalized ranging from -1 to 1
+1. fBodyGyro_std_X  - normalized ranging from -1 to 1
+1. fBodyGyro_std_Y  - normalized ranging from -1 to 1
+1. fBodyGyro_std_Z  - normalized ranging from -1 to 1
+1. fBodyAccMag_mean  - normalized ranging from -1 to 1
+1. fBodyAccMag_std  - normalized ranging from -1 to 1
+1. fBodyBodyAccJerkMag_mean  - normalized ranging from -1 to 1
+1. fBodyBodyAccJerkMag_std  - normalized ranging from -1 to 1
+1. fBodyBodyGyroMag_mean  - normalized ranging from -1 to 1
+1. fBodyBodyGyroMag_std  - normalized ranging from -1 to 1
+1. fBodyBodyGyroJerkMag_mean  - normalized ranging from -1 to 1
+1. fBodyBodyGyroJerkMag_std  - normalized ranging from -1 to 1
+
+## subjectActivity.txt
 
 1. subject - The number of the subject (1-30)
 1. activity - The activity on of the following values: Walking, Walking_Upstairs, Walking_Downstairs, Sitting, Standing, Laying
-1. tBodyAcc_mean_X 
-1. tBodyAcc_mean_Y 
-1. tBodyAcc_mean_Z 
-1. tBodyAcc_std_X 
-1. tBodyAcc_std_Y 
-1. tBodyAcc_std_Z 
-1. tGravityAcc_mean_X 
-1. tGravityAcc_mean_Y 
-1. tGravityAcc_mean_Z 
-1. tGravityAcc_std_X 
-1. tGravityAcc_std_Y 
-1. tGravityAcc_std_Z 
-1. tBodyAccJerk_mean_X 
-1. tBodyAccJerk_mean_Y 
-1. tBodyAccJerk_mean_Z 
-1. tBodyAccJerk_std_X 
-1. tBodyAccJerk_std_Y 
-1. tBodyAccJerk_std_Z 
-1. tBodyGyro_mean_X 
-1. tBodyGyro_mean_Y 
-1. tBodyGyro_mean_Z 
-1. tBodyGyro_std_X 
-1. tBodyGyro_std_Y 
-1. tBodyGyro_std_Z 
-1. tBodyGyroJerk_mean_X 
-1. tBodyGyroJerk_mean_Y 
-1. tBodyGyroJerk_mean_Z 
-1. tBodyGyroJerk_std_X 
-1. tBodyGyroJerk_std_Y 
-1. tBodyGyroJerk_std_Z 
-1. tBodyAccMag_mean 
-1. tBodyAccMag_std 
-1. tGravityAccMag_mean 
-1. tGravityAccMag_std 
-1. tBodyAccJerkMag_mean 
-1. tBodyAccJerkMag_std 
-1. tBodyGyroMag_mean 
-1. tBodyGyroMag_std 
-1. tBodyGyroJerkMag_mean 
-1. tBodyGyroJerkMag_std 
-1. fBodyAcc_mean_X 
-1. fBodyAcc_mean_Y 
-1. fBodyAcc_mean_Z 
-1. fBodyAcc_std_X 
-1. fBodyAcc_std_Y 
-1. fBodyAcc_std_Z 
-1. fBodyAccJerk_mean_X 
-1. fBodyAccJerk_mean_Y 
-1. fBodyAccJerk_mean_Z 
-1. fBodyAccJerk_std_X 
-1. fBodyAccJerk_std_Y 
-1. fBodyAccJerk_std_Z 
-1. fBodyGyro_mean_X 
-1. fBodyGyro_mean_Y 
-1. fBodyGyro_mean_Z 
-1. fBodyGyro_std_X 
-1. fBodyGyro_std_Y 
-1. fBodyGyro_std_Z 
-1. fBodyAccMag_mean 
-1. fBodyAccMag_std 
-1. fBodyBodyAccJerkMag_mean 
-1. fBodyBodyAccJerkMag_std 
-1. fBodyBodyGyroMag_mean 
-1. fBodyBodyGyroMag_std 
-1. fBodyBodyGyroJerkMag_mean 
-1. fBodyBodyGyroJerkMag_std 
-
-### subjectActivity.txt
-
-1. subject - The number of the subject (1-30)
-1. activity - The activity on of the following values: Walking, Walking_Upstairs, Walking_Downstairs, Sitting, Standing, Laying
-1. tBodyAcc_mean_X 
-1. tBodyAcc_mean_Y 
-1. tBodyAcc_mean_Z 
-1. tBodyAcc_std_X 
-1. tBodyAcc_std_Y 
-1. tBodyAcc_std_Z 
-1. tGravityAcc_mean_X 
-1. tGravityAcc_mean_Y 
-1. tGravityAcc_mean_Z 
-1. tGravityAcc_std_X 
-1. tGravityAcc_std_Y 
-1. tGravityAcc_std_Z 
-1. tBodyAccJerk_mean_X 
-1. tBodyAccJerk_mean_Y 
-1. tBodyAccJerk_mean_Z 
-1. tBodyAccJerk_std_X 
-1. tBodyAccJerk_std_Y 
-1. tBodyAccJerk_std_Z 
-1. tBodyGyro_mean_X 
-1. tBodyGyro_mean_Y 
-1. tBodyGyro_mean_Z 
-1. tBodyGyro_std_X 
-1. tBodyGyro_std_Y 
-1. tBodyGyro_std_Z 
-1. tBodyGyroJerk_mean_X 
-1. tBodyGyroJerk_mean_Y 
-1. tBodyGyroJerk_mean_Z 
-1. tBodyGyroJerk_std_X 
-1. tBodyGyroJerk_std_Y 
-1. tBodyGyroJerk_std_Z 
-1. tBodyAccMag_mean 
-1. tBodyAccMag_std 
-1. tGravityAccMag_mean 
-1. tGravityAccMag_std 
-1. tBodyAccJerkMag_mean 
-1. tBodyAccJerkMag_std 
-1. tBodyGyroMag_mean 
-1. tBodyGyroMag_std 
-1. tBodyGyroJerkMag_mean 
-1. tBodyGyroJerkMag_std 
-1. fBodyAcc_mean_X 
-1. fBodyAcc_mean_Y 
-1. fBodyAcc_mean_Z 
-1. fBodyAcc_std_X 
-1. fBodyAcc_std_Y 
-1. fBodyAcc_std_Z 
-1. fBodyAccJerk_mean_X 
-1. fBodyAccJerk_mean_Y 
-1. fBodyAccJerk_mean_Z 
-1. fBodyAccJerk_std_X 
-1. fBodyAccJerk_std_Y 
-1. fBodyAccJerk_std_Z 
-1. fBodyGyro_mean_X 
-1. fBodyGyro_mean_Y 
-1. fBodyGyro_mean_Z 
-1. fBodyGyro_std_X 
-1. fBodyGyro_std_Y 
-1. fBodyGyro_std_Z 
-1. fBodyAccMag_mean 
-1. fBodyAccMag_std 
-1. fBodyBodyAccJerkMag_mean 
-1. fBodyBodyAccJerkMag_std 
-1. fBodyBodyGyroMag_mean 
-1. fBodyBodyGyroMag_std 
-1. fBodyBodyGyroJerkMag_mean 
-1. fBodyBodyGyroJerkMag_std 
+1. tBodyAcc_mean_X  - normalized ranging from -1 to 1
+1. tBodyAcc_mean_Y  - normalized ranging from -1 to 1
+1. tBodyAcc_mean_Z  - normalized ranging from -1 to 1
+1. tBodyAcc_std_X  - normalized ranging from -1 to 1
+1. tBodyAcc_std_Y  - normalized ranging from -1 to 1
+1. tBodyAcc_std_Z  - normalized ranging from -1 to 1
+1. tGravityAcc_mean_X  - normalized ranging from -1 to 1
+1. tGravityAcc_mean_Y  - normalized ranging from -1 to 1
+1. tGravityAcc_mean_Z  - normalized ranging from -1 to 1
+1. tGravityAcc_std_X  - normalized ranging from -1 to 1
+1. tGravityAcc_std_Y  - normalized ranging from -1 to 1
+1. tGravityAcc_std_Z  - normalized ranging from -1 to 1
+1. tBodyAccJerk_mean_X  - normalized ranging from -1 to 1
+1. tBodyAccJerk_mean_Y  - normalized ranging from -1 to 1
+1. tBodyAccJerk_mean_Z  - normalized ranging from -1 to 1
+1. tBodyAccJerk_std_X  - normalized ranging from -1 to 1
+1. tBodyAccJerk_std_Y  - normalized ranging from -1 to 1
+1. tBodyAccJerk_std_Z  - normalized ranging from -1 to 1
+1. tBodyGyro_mean_X  - normalized ranging from -1 to 1
+1. tBodyGyro_mean_Y  - normalized ranging from -1 to 1
+1. tBodyGyro_mean_Z  - normalized ranging from -1 to 1
+1. tBodyGyro_std_X  - normalized ranging from -1 to 1
+1. tBodyGyro_std_Y  - normalized ranging from -1 to 1
+1. tBodyGyro_std_Z  - normalized ranging from -1 to 1
+1. tBodyGyroJerk_mean_X  - normalized ranging from -1 to 1
+1. tBodyGyroJerk_mean_Y  - normalized ranging from -1 to 1
+1. tBodyGyroJerk_mean_Z  - normalized ranging from -1 to 1
+1. tBodyGyroJerk_std_X  - normalized ranging from -1 to 1
+1. tBodyGyroJerk_std_Y  - normalized ranging from -1 to 1
+1. tBodyGyroJerk_std_Z  - normalized ranging from -1 to 1
+1. tBodyAccMag_mean  - normalized ranging from -1 to 1
+1. tBodyAccMag_std  - normalized ranging from -1 to 1
+1. tGravityAccMag_mean  - normalized ranging from -1 to 1
+1. tGravityAccMag_std  - normalized ranging from -1 to 1
+1. tBodyAccJerkMag_mean  - normalized ranging from -1 to 1
+1. tBodyAccJerkMag_std  - normalized ranging from -1 to 1
+1. tBodyGyroMag_mean  - normalized ranging from -1 to 1
+1. tBodyGyroMag_std  - normalized ranging from -1 to 1
+1. tBodyGyroJerkMag_mean  - normalized ranging from -1 to 1
+1. tBodyGyroJerkMag_std  - normalized ranging from -1 to 1
+1. fBodyAcc_mean_X  - normalized ranging from -1 to 1
+1. fBodyAcc_mean_Y  - normalized ranging from -1 to 1
+1. fBodyAcc_mean_Z  - normalized ranging from -1 to 1
+1. fBodyAcc_std_X  - normalized ranging from -1 to 1
+1. fBodyAcc_std_Y  - normalized ranging from -1 to 1
+1. fBodyAcc_std_Z  - normalized ranging from -1 to 1
+1. fBodyAccJerk_mean_X  - normalized ranging from -1 to 1
+1. fBodyAccJerk_mean_Y  - normalized ranging from -1 to 1
+1. fBodyAccJerk_mean_Z  - normalized ranging from -1 to 1
+1. fBodyAccJerk_std_X  - normalized ranging from -1 to 1
+1. fBodyAccJerk_std_Y  - normalized ranging from -1 to 1
+1. fBodyAccJerk_std_Z  - normalized ranging from -1 to 1
+1. fBodyGyro_mean_X  - normalized ranging from -1 to 1
+1. fBodyGyro_mean_Y  - normalized ranging from -1 to 1
+1. fBodyGyro_mean_Z  - normalized ranging from -1 to 1
+1. fBodyGyro_std_X  - normalized ranging from -1 to 1
+1. fBodyGyro_std_Y  - normalized ranging from -1 to 1
+1. fBodyGyro_std_Z  - normalized ranging from -1 to 1
+1. fBodyAccMag_mean  - normalized ranging from -1 to 1
+1. fBodyAccMag_std  - normalized ranging from -1 to 1
+1. fBodyBodyAccJerkMag_mean  - normalized ranging from -1 to 1
+1. fBodyBodyAccJerkMag_std  - normalized ranging from -1 to 1
+1. fBodyBodyGyroMag_mean  - normalized ranging from -1 to 1
+1. fBodyBodyGyroMag_std  - normalized ranging from -1 to 1
+1. fBodyBodyGyroJerkMag_mean  - normalized ranging from -1 to 1
+1. fBodyBodyGyroJerkMag_std  - normalized ranging from -1 to 1
